@@ -1,0 +1,27 @@
+.Todo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+  
+    &.completed span {
+      text-decoration: line-through;
+    }
+  
+    button {
+      margin-left: 10px;
+    }
+  
+    &.fade-out {
+      animation: fadeOut 0.5s forwards;
+    }
+  }
+  
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
